@@ -1,0 +1,24 @@
+{
+  "name": "ts-template-2024",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "node --env-file=.env --watch -r ts-node/register src/server.ts",
+    "clean": "rimraf build",
+    "build": "npx eslint src && tsc",
+    "start": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^2.6.4",
+    "@stylistic/eslint-plugin-ts": "^2.6.4",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
